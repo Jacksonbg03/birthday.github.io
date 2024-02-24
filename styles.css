@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0c192c;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+
+.first{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+}
+
+.first .main{
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.first .main .row .hidden{
+    align-items: center;
+    display: none;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+.first .main .row h3{
+    font-size: 75px;
+    color: #ff5e5e;
+    text-align: center;
+}
+
+.first .main .row .typing{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row h3:hover{
+    transition: all 0.3s ease;
+    color: #ff8f9c;
+    cursor: pointer;
+}
+
+.first .main .row .active{
+    color: #ff76fa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row .active:hover{
+    color: #008ff5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row h4{
+    font-size: 60px;
+    color: #fffeac;
+    text-align: center;
+}
+
+.first .main .row h4:hover{
+    transition: all 0.3s ease;
+    color: #ffdf8f;
+    cursor: pointer;
+}
+
+.first .main .row .typings{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row .actives{
+    color: #76e8ff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row .actives:hover{
+    color: #87ff8f;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row h5{
+    font-size: 50px;
+    text-align: center;
+    color: #65ff93;
+}
+
+.first .main .row h5:hover{
+    transition: all 0.3s ease;
+    color: #ff5e5e;
+    cursor: pointer;
+}
+
+.first .main .row .typingss{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row .activess{
+    color: #92ffbf;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row .activess:hover{
+    color: #b394e8;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row .hidden{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background-color: #ef0bab;
+    border-radius: 40px;
+    display: none;
+    white-space: nowrap;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.first .main .row .hidden:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0.8rem #ff45e6;
+}
+
+.first .main .row .hidden a{
+    text-decoration: none;
+    color: #ffffff;   
+    font-weight: 600; 
+}
+
+i{
+    position: absolute;
+    background: linear-gradient(transparent, #FF4545);
+    width: 50px;
+    height: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 5s linear infinite;
+}
+
+i:nth-child(3n + 1){
+    background: linear-gradient(transparent, #FFB445);
+}
+
+i:nth-child(3n + 2){
+    background: linear-gradient(transparent, #FFFD45);
+}
+
+i:nth-child(3n + 3){
+    background: linear-gradient(transparent, #45FF58);
+}
+
+i:nth-child(3n + 4){
+    background: linear-gradient(transparent, #FF4545);
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(calc(100vh + 200px));
+    }
+}
